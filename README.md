@@ -1,6 +1,13 @@
 # Revise With Me :wink:
 Ever had a partner which generates question as per your requirements? Our unique Question Generation tool makes this process easier no matter what's the source{PDF/Image/Text} with rapid questions. So test yourself on the go!
 
+<img align="left" width="180" height="300" src="https://github.com/capturemathan/ReviseWithMe/blob/master/Screenshots/Intro.png">
+<img align="center" width="180" height="300" src="https://github.com/capturemathan/ReviseWithMe/blob/master/Screenshots/TypeQues.png">
+<img align="left" width="180" height="300" src="https://github.com/capturemathan/ReviseWithMe/blob/master/Screenshots/PicQues.png">
+<img align="center" width="180" height="300" src="https://github.com/capturemathan/ReviseWithMe/blob/master/Screenshots/UploadQues.png">
+<img align="center" width="180" height="300" src="https://github.com/capturemathan/ReviseWithMe/blob/master/Screenshots/About.png">
+
+
 ## Features
 -> Test your knowledge instanly with rapid questions.<br />
 -> Efficient for long term learning.<br />
