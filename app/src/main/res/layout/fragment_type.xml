@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="18dp"
+        android:hint="Type or Paste your Query" />
+
+    <Button
+        android:id="@+id/typebtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/type"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:height="50dp"
+        android:background="@color/colorPrimary"
+        android:onClick="typeques"
+        android:text="Questions Please"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/typebtn"
+        android:layout_marginTop="18dp">
+
+    </ListView>
+
+</android.widget.RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/pdfbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="18dp"
+        android:height="50dp"
+        android:background="@color/colorPrimary"
+        android:text="Upload PDF"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp" />
+
+    <ListView
+        android:id="@+id/listpdf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pdfbtn"
+        android:layout_marginTop="18dp">
+
+    </ListView>
+
+
+</RelativeLayout>

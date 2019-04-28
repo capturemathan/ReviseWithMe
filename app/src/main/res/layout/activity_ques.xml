@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/ed1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="18dp" />
+
+    <Button
+        android:id="@+id/bt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ed1"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:onClick="proceed"
+        android:text="Proceed" />
+
+    <Button
+        android:id="@+id/btpdf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt1"
+        android:layout_margin="18dp"
+        android:onClick="pdf"
+        android:text="Upload PDF" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btpdf"
+        android:layout_margin="18dp"
+        android:text="sasas" />
+
+</RelativeLayout>

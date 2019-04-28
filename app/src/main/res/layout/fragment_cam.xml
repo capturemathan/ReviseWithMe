@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/choose_from_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="18dp"
+        android:height="50dp"
+        android:background="@color/colorPrimary"
+        android:text="Choose from Gallery"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        tools:context=".MainActivity" />
+
+
+    <Button
+        android:id="@+id/take_a_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/choose_from_gallery"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:background="@color/colorPrimary"
+        android:text="Take a photo"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        tools:context=".MainActivity" />
+
+
+    <ListView
+        android:id="@+id/listpdf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/take_a_photo"
+        android:layout_marginTop="18dp">
+
+    </ListView>
+
+
+</RelativeLayout>
