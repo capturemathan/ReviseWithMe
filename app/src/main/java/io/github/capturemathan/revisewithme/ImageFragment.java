@@ -42,13 +42,13 @@ import java.util.Comparator;
 import java.util.List;
 
 import static android.app.Activity.RESULT_OK;
-
 public class ImageFragment extends Fragment {
     final int REQUEST_GALLERY = 0;
     final int REQUEST_CAMERA = 1;
     final int MY_PERMISSIONS_REQUESTS = 0;
     StringBuilder detectedText;
     Uri imageUri;
+    String ipaddr;
     String response;
     ListView l;
 
@@ -56,6 +56,7 @@ public class ImageFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         final View rootview = inflater.inflate(R.layout.fragment_cam, null);
         String TAG = MainActivity.class.getSimpleName();
+        ipaddr = getString(R.string.ip_address);
 
         rootview.findViewById(R.id.choose_from_gallery).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -187,7 +188,7 @@ public class ImageFragment extends Fragment {
             HttpHandler sh = new HttpHandler();
             // Making a request to url and getting response
             String modText = detectedText.toString().replaceAll("/", " ");
-            String url = "http://192.168.43.16:5000/" + modText;
+            String url = ipaddr + modText;
             String jsonStr = sh.makeServiceCall(url);
 
             Log.e("MainActivity", "Response from url: " + jsonStr);

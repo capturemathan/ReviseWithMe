@@ -37,6 +37,7 @@ public class PdfFragment1 extends Fragment {
     public static final int FILE_PICKER_REQUEST_CODE = 1;
 
     String path, response, parsedText = "";
+    String ipaddr;
     ListView l;
 
     @Override
@@ -49,6 +50,7 @@ public class PdfFragment1 extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_pdf, container, false);
         l = (ListView) view.findViewById(R.id.listpdf);
+        ipaddr = getString(R.string.ip_address);
         Button pickButton = (Button) view.findViewById(R.id.pdfbtn);
         pickButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -143,7 +145,7 @@ public class PdfFragment1 extends Fragment {
             HttpHandler sh = new HttpHandler();
             // Making a request to url and getting response
             String modText = parsedText.replaceAll("/", " ");
-            String url = "http://192.168.43.16:5000/" + modText;
+            String url = ipaddr + modText;
             String jsonStr = sh.makeServiceCall(url);
 
             Log.e("MainActivity", "Response from url: " + jsonStr);

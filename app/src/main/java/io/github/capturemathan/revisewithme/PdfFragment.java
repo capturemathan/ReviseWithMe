@@ -34,6 +34,7 @@ public class PdfFragment extends Fragment {
 
     Button b;
     ListView l;
+    String ipaddr;
     String filePath, response, parsedText = "";
 
     @Nullable
@@ -41,6 +42,7 @@ public class PdfFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View rootview = inflater.inflate(R.layout.fragment_pdf, null);
         b = (Button) rootview.findViewById(R.id.pdfbtn);
+        ipaddr = getString(R.string.ip_address);
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -70,7 +72,7 @@ public class PdfFragment extends Fragment {
             HttpHandler sh = new HttpHandler();
             // Making a request to url and getting response
             String modText = parsedText.replaceAll("/", " ");
-            String url = "http://192.168.43.16:5000/" + modText;
+            String url = ipaddr + modText;
             String jsonStr = sh.makeServiceCall(url);
 
             Log.e("MainActivity", "Response from url: " + jsonStr);

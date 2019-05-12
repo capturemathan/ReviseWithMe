@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Revise With Me</string>
+    <string name="ip_address">http://192.168.43.16:5000/</string>
 </resources>
