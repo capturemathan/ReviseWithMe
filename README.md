@@ -22,5 +22,5 @@ Ever had a partner which generates question as per your requirements? Our unique
 
 ## Installation Steps
 1. Install Textblob and Flask in Python.<br />
-2. Replace the IP address in the APP with your localhost.<br />
+2. Replace the IP address in the APP with your localhost. Found in res->values->strings.xml<br />
 3. Start Answering :)<br />
