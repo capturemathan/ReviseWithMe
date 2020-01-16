@@ -14,11 +14,9 @@ Ever had a partner which generates question as per your requirements? Our unique
 -> Wanna take a picture, yes go ahead to generate questions out of your pic.<br />
 -> On the whole, a Self Analysis Tool <br />
 
-## Requirements needed to run the app
-1. Textblob Module<br />
-2. Flask Server<br />
+## Requirements Python
+![Requirements](https://raw.githubusercontent.com/capturemathan/ReviseWithMe/blob/master/Screenshots/Requirements.png)
 
 ## Installation Steps
-1. Install Textblob and Flask in Python.<br />
-2. Replace the IP address in the APP with your localhost. Found in res->values->strings.xml<br />
-3. Start Answering :)<br />
+1. Replace the IP address in the Android APP with your localhost. Found in `res->values->strings.xml`<br />
+2. Start Answering :)<br />
