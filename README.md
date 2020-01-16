@@ -6,7 +6,7 @@ Ever had a partner which generates question as per your requirements? Our unique
 <img align="left" width="180" height="300" src="https://github.com/capturemathan/ReviseWithMe/blob/master/Screenshots/PicQues.png">
 <img align="center" width="180" height="300" src="https://github.com/capturemathan/ReviseWithMe/blob/master/Screenshots/UploadQues.png">
 
-## Features
+## Features :tada:
 -> Test your knowledge instanly with rapid questions.<br />
 -> Efficient for long term learning.<br />
 -> Any content in clipboard, paste to get instant questionnaire.<br />
@@ -14,9 +14,11 @@ Ever had a partner which generates question as per your requirements? Our unique
 -> Wanna take a picture, yes go ahead to generate questions out of your pic.<br />
 -> On the whole, a Self Analysis Tool <br />
 
-## Requirements Python
-![Requirements](https://github.com/capturemathan/ReviseWithMe/blob/master/Screenshots/Requirements.png)
+## Python Requirements :pencil2:
 
-## Installation Steps
+<img width="500" height="400" src="https://github.com/capturemathan/ReviseWithMe/blob/master/Screenshots/Requirements.png" alt="Requirements">
+
+## Android Requirements :iphone:
+
 1. Replace the IP address in the Android APP with your localhost. Found in `res->values->strings.xml`<br />
 2. Start Answering :)<br />
