@@ -15,7 +15,7 @@ Ever had a partner which generates question as per your requirements? Our unique
 -> On the whole, a Self Analysis Tool <br />
 
 ## Requirements Python
-![Requirements](https://raw.githubusercontent.com/capturemathan/ReviseWithMe/blob/master/Screenshots/Requirements.png)
+![Requirements](https://github.com/capturemathan/ReviseWithMe/blob/master/Screenshots/Requirements.png)
 
 ## Installation Steps
 1. Replace the IP address in the Android APP with your localhost. Found in `res->values->strings.xml`<br />
