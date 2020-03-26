@@ -1,0 +1,25 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "capturemathan",
+      "name": "Mathana Kumar S",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/36666781?v=4",
+      "profile": "http://capturemathan.github.io",
+      "contributions": [
+        "code",
+        "design"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "ReviseWithMe",
+  "projectOwner": "capturemathan",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
