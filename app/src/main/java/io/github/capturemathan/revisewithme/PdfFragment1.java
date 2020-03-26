@@ -29,8 +29,6 @@ import org.json.JSONObject;
 
 import java.io.IOException;
 
-import io.github.capturemathan.revisewithme.R;
-
 public class PdfFragment1 extends Fragment {
 
     public static final int PERMISSIONS_REQUEST_CODE = 0;

@@ -1,6 +1,5 @@
 package io.github.capturemathan.revisewithme;
 
-import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -13,13 +12,10 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-
-import java.util.ArrayList;
 
 public class TypeFragment extends Fragment {
 
@@ -83,8 +79,8 @@ public class TypeFragment extends Fragment {
         @Override
         protected void onPostExecute(Void aVoid) {
             String quesarray[] = response.split("\\?");
-            for (int i=0;i<quesarray.length;i++) {
-                quesarray[i]+=" ?";
+            for (int i = 0; i < quesarray.length; i++) {
+                quesarray[i] += " ?";
             }
             l.setVisibility(View.VISIBLE);
             ArrayAdapter adapter = new ArrayAdapter<String>(getContext(), R.layout.listitem, quesarray);

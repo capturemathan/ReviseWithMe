@@ -1,22 +1,16 @@
 package io.github.capturemathan.revisewithme;
 
-import android.Manifest;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.os.AsyncTask;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
-import android.support.v4.content.PermissionChecker;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -60,6 +54,29 @@ public class PdfFragment extends Fragment {
         return rootview;
     }
 
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        Log.v("Herem", "Entering");
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == 1000 && resultCode == RESULT_OK) {
+            filePath = data.getStringExtra(FilePickerActivity.RESULT_FILE_PATH);
+            try {
+                final String dirPath = filePath;
+                Log.v("herem", filePath);
+                PdfReader reader = new PdfReader(dirPath);
+                int n = reader.getNumberOfPages();
+                for (int i = 0; i < n; i++) {
+                    parsedText = parsedText + PdfTextExtractor.getTextFromPage(reader, i + 1).trim() + "\n"; //Extracting the content from the different pages
+                }
+                reader.close();
+            } catch (Exception e) {
+                System.out.println(e);
+            }
+            new getresponse().execute();
+            // Do anything with file
+        }
+    }
+
     private class getresponse extends AsyncTask<Void, Void, Void> {
         @Override
         protected void onPreExecute() {
@@ -94,36 +111,13 @@ public class PdfFragment extends Fragment {
         @Override
         protected void onPostExecute(Void aVoid) {
             String quesarray[] = response.split("\\?");
-            for (int i=0;i<quesarray.length;i++) {
-                quesarray[i]+=" ?";
+            for (int i = 0; i < quesarray.length; i++) {
+                quesarray[i] += " ?";
             }
             l.setVisibility(View.VISIBLE);
             ArrayAdapter adapter = new ArrayAdapter<String>(getContext(), R.layout.listitem, quesarray);
             l.setAdapter(adapter);
             super.onPostExecute(aVoid);
-        }
-    }
-
-    @Override
-    public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        Log.v("Herem", "Entering");
-        super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == 1000 && resultCode == RESULT_OK) {
-            filePath = data.getStringExtra(FilePickerActivity.RESULT_FILE_PATH);
-            try {
-                final String dirPath = filePath;
-                Log.v("herem", filePath);
-                PdfReader reader = new PdfReader(dirPath);
-                int n = reader.getNumberOfPages();
-                for (int i = 0; i < n; i++) {
-                    parsedText = parsedText + PdfTextExtractor.getTextFromPage(reader, i + 1).trim() + "\n"; //Extracting the content from the different pages
-                }
-                reader.close();
-            } catch (Exception e) {
-                System.out.println(e);
-            }
-            new getresponse().execute();
-            // Do anything with file
         }
     }
 

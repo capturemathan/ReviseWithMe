@@ -7,14 +7,12 @@ import android.preference.PreferenceManager;
 
 public class InitApplication extends Application {
     public static final String NIGHT_MODE = "NIGHT_MODE";
-    private boolean isNightModeEnabled = false;
-
     private static InitApplication singleton = null;
+    private boolean isNightModeEnabled = false;
 
     public static InitApplication getInstance() {
 
-        if(singleton == null)
-        {
+        if (singleton == null) {
             singleton = new InitApplication();
         }
         return singleton;

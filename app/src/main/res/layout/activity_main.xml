@@ -8,18 +8,6 @@
     android:orientation="vertical"
     tools:context="io.github.capturemathan.revisewithme.MainActivity">
 
-    <android.support.v7.widget.SwitchCompat
-        android:id="@+id/switchCompat"
-        android:layout_width="wrap_content"
-        android:textSize="30sp"
-        android:layout_height="wrap_content"
-        android:checked="true"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/container" />
-
-
     <FrameLayout
         android:id="@+id/container"
         android:layout_width="0dp"

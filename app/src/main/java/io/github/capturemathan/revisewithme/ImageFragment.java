@@ -2,14 +2,12 @@ package io.github.capturemathan.revisewithme;
 
 import android.content.ContentValues;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.provider.MediaStore;
-import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AlertDialog;
@@ -20,10 +18,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ListView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.vision.Frame;
@@ -42,6 +37,7 @@ import java.util.Comparator;
 import java.util.List;
 
 import static android.app.Activity.RESULT_OK;
+
 public class ImageFragment extends Fragment {
     final int REQUEST_GALLERY = 0;
     final int REQUEST_CAMERA = 1;
@@ -210,8 +206,8 @@ public class ImageFragment extends Fragment {
         @Override
         protected void onPostExecute(Void aVoid) {
             String quesarray[] = response.split("\\?");
-            for (int i=0;i<quesarray.length;i++) {
-                quesarray[i]+=" ?";
+            for (int i = 0; i < quesarray.length; i++) {
+                quesarray[i] += " ?";
             }
             l.setVisibility(View.VISIBLE);
             ArrayAdapter adapter = new ArrayAdapter<String>(getContext(), R.layout.listitem, quesarray);
