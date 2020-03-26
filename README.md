@@ -35,6 +35,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
+    <td align="center"><a href="https://github.com/sathiyajith"><img src="https://avatars0.githubusercontent.com/u/49834846?v=4" width="100px;" alt=""/><br /><sub><b>sathiyajith K S</b></sub></a><br /><a href="#design-sathiyajith" title="Design">🎨</a> <a href="https://github.com/capturemathan/ReviseWithMe/commits?author=sathiyajith" title="Code">💻</a></td>
     <td align="center"><a href="http://capturemathan.github.io"><img src="https://avatars2.githubusercontent.com/u/36666781?v=4" width="100px;" alt=""/><br /><sub><b>Mathana Kumar S</b></sub></a><br /><a href="https://github.com/capturemathan/ReviseWithMe/commits?author=capturemathan" title="Code">💻</a> <a href="#design-capturemathan" title="Design">🎨</a></td>
   </tr>
 </table>
