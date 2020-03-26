@@ -1,0 +1,25 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "sathiyajith",
+      "name": "sathiyajith K S",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/49834846?v=4",
+      "profile": "https://github.com/sathiyajith",
+      "contributions": [
+        "design",
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "ReviseWithMe",
+  "projectOwner": "capturemathan",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
